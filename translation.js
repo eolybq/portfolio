@@ -11,7 +11,7 @@ export const translations = {
         skillsTitle: "Dovednosti",
         skillsStat: "Statistika (+ Ekonometrie, Modely časových řad, Bayesiánská analýza)",
         skillsLinux: "Linux (uživatelská znalost)",
-        filters: ["Vše", "Webový vývoj", "Datová analýza", "Strojové učení"],
+        filters: ["Vše", "Datová analýza", "Strojové učení", "Webový vývoj"],
         projectsTitle: "Projekty",
         footerText: "© 2025 Václav Jež. Všechna práva vyhrazena.",
 
@@ -46,7 +46,7 @@ export const translations = {
         skillsTitle: "Skills",
         skillsStat: "Statistics (+ Econometrics, Time Series Models, Bayesian Analysis)",
         skillsLinux: "Linux (user-level knowledge)",
-        filters: ["All", "Web Development", "Data Analysis", "Machine Learning"],
+        filters: ["All", "Data Analysis", "Machine Learning", "Web Development"],
         projectsTitle: "Projects",
         footerText: "© 2025 Václav Jež. All rights reserved.",
 
