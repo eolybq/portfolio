@@ -59,37 +59,42 @@ const projects = [
         type: ["analysis", "ml"]
     },
     {
-        // project_title_2: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
-        url: "https://github.com/eolybq/bachelors_thesis",
-        type: "analysis"
-    },
-    {
-        // project_title_3: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
-        url: "https://github.com/eolybq/market_sim_prediction",
-        type: "analysis"
-    },
-    {
-        // project_title_4: "RAG LLM ChatBOT pro dokumentaci python knihoven",
+        // project_title_2: "RAG LLM ChatBOT pro dokumentaci python knihoven",
         url: "https://github.com/eolybq/docs_rag_chat_bot",
         type: ["ml"]
     },
     {
-        // project_title_5: "Webová aplikace pro testování různých modelů s různými hyperparametry",
+        // project_title_3: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
+        url: "https://github.com/eolybq/bayes_vs_ml",
+        type: ["analysis", "ml"]
+    },
+    {
+        // project_title_4: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
+        url: "https://github.com/eolybq/bachelors_thesis",
+        type: "analysis"
+    },
+    {
+        // project_title_5: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
+        url: "https://github.com/eolybq/market_sim_prediction",
+        type: "analysis"
+    },
+    {
+        // project_title_6: "Webová aplikace pro testování různých modelů s různými hyperparametry",
         url: "https://github.com/eolybq/ModelApp",
         type: ["web", "analysis", "ml"]
     },
     {
-        // project_title_6: "Webová aplikace pro správu kalorií a aktivit",
+        // project_title_7: "Webová aplikace pro správu kalorií a aktivit",
         url: "https://github.com/eolybq/FitApp",
         type: "web"
     },
     {
-        // project_title_7: "Webová stránka pro živý chat s využitím WebSocketů",
+        // project_title_8: "Webová stránka pro živý chat s využitím WebSocketů",
         url: "https://github.com/eolybq/ChatApp",
         type: "web"
     },
     {
-        // project_title_8: "Webová stránka pro portfolio",
+        // project_title_9: "Webová stránka pro portfolio",
         url: "https://github.com/eolybq/PortfolioWeb",
         type: "web"
     },
@@ -153,7 +158,7 @@ function renderProjects(filter = translations[currentLang].filters[0]) {
 
         // map filter labels na typy
         const filterMap = {
-            CS: { "Vše": null, "Webový vývoj": "web", "Datová analýza": "analysis", "Strojové učení": "ml" },
+            CS: { "Vše": null, "Webový vývoj": "web", "Datová Analýza": "analysis", "Strojové učení": "ml" },
             EN: { "All": null, "Web Development": "web", "Data Analysis": "analysis", "Machine Learning": "ml" }
         }
         const selectedType = filterMap[currentLang][filter]
@@ -166,12 +171,15 @@ function renderProjects(filter = translations[currentLang].filters[0]) {
             const h3 = document.createElement('h3')
             const titleKey = `project_title_${idx}`
             h3.textContent = translations[currentLang][titleKey] || proj.title
-            h3.setAttribute("data-i18n", titleKey)
+            // h3.setAttribute("data-i18n", titleKey)
 
             const p = document.createElement('p')
             const descKey = `project_desc_${idx}`
-            p.textContent = (translations[currentLang][descKey] || proj.description).substring(0, 100) + '...'
-            p.setAttribute("data-i18n", descKey)
+
+            const rawHTML = translations[currentLang][descKey] || proj.description;
+            const plainText = rawHTML.replace(/<[^>]*>?/gm, '');
+            p.textContent = plainText.substring(0, 100) + '...'
+            // p.setAttribute("data-i18n", descKey)
 
             const a = document.createElement('a')
             a.href = proj.url
