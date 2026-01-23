@@ -9,8 +9,9 @@ export const translations = {
         aboutText:
             "Absolvent bakalářského programu Ekonomie na Masarykově univerzitě, nyní student navazujícího magisterského programu Matematické a statistické metody v ekonomii. Kombinuji praktické zkušenosti ze svých projektů a samostudia s formálním vzděláním. Přináším tak přesah znalostí od ekonomie, podnikové ekonomie, statistiky, ekonometrie po obecné programování, práci s daty a webový vývoj. Jsem nadšený do data science, technologií a pokroku, ve volném čase rád sbírám znalosti z těchto oblastí. Neustále rozšiřuji svoje technické dovednosti a hledám příležitosti k jejich uplatnění v praktických úkolech. Přehled mých hlavních projektů je dostupný níže. Detailnější popis a výsledky projektů spolu s reporty projektů jsou dostupné na GitHubu.",
         skillsTitle: "Dovednosti",
-        skillsStat: "Statistika (+ Ekonometrie, Modely časových řad, Bayesiánská analýza)",
+        skillsML: "Strojové učení",
         skillsMCMC: "MCMC Simulace",
+        skillsStat: "Statistika (+ Ekonometrie, Modely časových řad, Bayesiánská analýza)",
         filters: ["Vše", "Strojové učení", "Datová Analýza", "Webový vývoj"],
         projectsTitle: "Projekty",
         footerText: "© 2025 Václav Jež. Všechna práva vyhrazena.",
@@ -154,8 +155,9 @@ export const translations = {
         aboutText:
             "Graduate of the Bachelor's program in Economics at Masaryk University, currently pursuing a Master's in Mathematical and Statistical Methods in Economics. I combine practical experience from my projects and self-study with formal education. My expertise spans economics, business, statistics, econometrics, programming, data analysis, and web development. I am passionate about data science, technology, and innovation, continuously expanding my technical skills and seeking opportunities to apply them in real-world projects. A summary of my main projects is available below, and detailed reports can be found on GitHub.",
         skillsTitle: "Skills",
-        skillsStat: "Statistics (+ Econometrics, Time Series Models, Bayesian Analysis)",
+        skillsML: "Machine Learning",
         skillsMCMC: "MCMC Simulations",
+        skillsStat: "Statistics (+ Econometrics, Time Series Models, Bayesian Analysis)",
         filters: ["All", "Machine Learning", "Data Analysis", "Web Development"],
         projectsTitle: "Projects",
         footerText: "© 2025 Václav Jež. All rights reserved.",
