@@ -56,7 +56,7 @@ const projects = [
     {
         // project_title_1: "Netradiční data, netradiční modely",
         url: "https://github.com/eolybq/tsla_sentiment_prediction",
-        type: ["stat", "ml"]
+        type: ["ml"]
     },
     {
         // project_title_2: "RAG LLM ChatBOT pro dokumentaci python knihoven",
