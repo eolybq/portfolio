@@ -51,12 +51,12 @@ const projects = [
     {
         // project_title_0: "Netradiční data, tradiční modely",
         url: "https://github.com/eolybq/tsla_sentiment_prediction",
-        type: "analysis"
+        type: "stat"
     },
     {
         // project_title_1: "Netradiční data, netradiční modely",
         url: "https://github.com/eolybq/tsla_sentiment_prediction",
-        type: ["analysis", "ml"]
+        type: ["stat", "ml"]
     },
     {
         // project_title_2: "RAG LLM ChatBOT pro dokumentaci python knihoven",
@@ -66,22 +66,22 @@ const projects = [
     {
         // project_title_3: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
         url: "https://github.com/eolybq/bayes_vs_ml",
-        type: ["analysis", "ml"]
+        type: ["stat", "ml"]
     },
     {
         // project_title_4: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
         url: "https://github.com/eolybq/bachelors_thesis",
-        type: "analysis"
+        type: "stat"
     },
     {
         // project_title_5: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
         url: "https://github.com/eolybq/market_sim_prediction",
-        type: "analysis"
+        type: "stat"
     },
     {
         // project_title_6: "Webová aplikace pro testování různých modelů s různými hyperparametry",
         url: "https://github.com/eolybq/ModelApp",
-        type: ["web", "analysis", "ml"]
+        type: ["web", "stat", "ml"]
     },
     {
         // project_title_7: "Webová aplikace pro správu kalorií a aktivit",
@@ -158,8 +158,8 @@ function renderProjects(filter = translations[currentLang].filters[0]) {
 
         // map filter labels na typy
         const filterMap = {
-            CS: { "Vše": null, "Webový vývoj": "web", "Datová Analýza": "analysis", "Strojové učení": "ml" },
-            EN: { "All": null, "Web Development": "web", "Data Analysis": "analysis", "Machine Learning": "ml" }
+            CS: { "Vše": null, "Webový vývoj": "web", "Statistika": "stat", "Strojové učení": "ml" },
+            EN: { "All": null, "Web Development": "web", "Statistics": "stat", "Machine Learning": "ml" }
         }
         const selectedType = filterMap[currentLang][filter]
 

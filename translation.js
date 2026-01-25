@@ -12,7 +12,7 @@ export const translations = {
         skillsML: "Strojové učení",
         skillsMCMC: "MCMC Simulace",
         skillsStat: "Statistika (+ Ekonometrie, Modely časových řad, Bayesiánská analýza)",
-        filters: ["Vše", "Strojové učení", "Datová Analýza", "Webový vývoj"],
+        filters: ["Vše", "Strojové učení", "Statistika", "Webový vývoj"],
         projectsTitle: "Projekty",
         footerText: "© 2025 Václav Jež. Všechna práva vyhrazena.",
 
@@ -23,7 +23,7 @@ export const translations = {
             <strong>Klíčové prvky:</strong>
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
                 <li><strong>Metodologie:</strong> Porovnání tradičních statistických modelů (ARIMA) s modely rozšířenými o exogenní proměnné (Tweets sentiment, VIX).</li>
-                <li><strong>Analýza dat:</strong> Využití PCA (analýza hlavních komponent) pro snížení dimenzionality finančních indikátorů.</li>
+                <li><strong>Data Science:</strong> Využití PCA (analýza hlavních komponent) pro snížení dimenzionality finančních indikátorů.</li>
                 <li><strong>Výsledek:</strong> Projekt ukázal, že nejjednodušší model <strong>ARIMA</strong> byl pro akcie TSLA nejlepším prediktorem. Přidání sentimentu ani PCA nevedlo ke statisticky významnému zlepšení predikce.</li>
             </ul>
         `,
@@ -158,7 +158,7 @@ export const translations = {
         skillsML: "Machine Learning",
         skillsMCMC: "MCMC Simulations",
         skillsStat: "Statistics (+ Econometrics, Time Series Models, Bayesian Analysis)",
-        filters: ["All", "Machine Learning", "Data Analysis", "Web Development"],
+        filters: ["All", "Machine Learning", "Statistics", "Web Development"],
         projectsTitle: "Projects",
         footerText: "© 2025 Václav Jež. All rights reserved.",
 
@@ -169,7 +169,7 @@ export const translations = {
             <strong>Key Highlights:</strong>
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
                 <li><strong>Methodology:</strong> Benchmarking ARIMA models against models incorporating exogenous variables (Tweet sentiment, VIX).</li>
-                <li><strong>Data Analysis:</strong> Implemented PCA to reduce the dimensionality of financial indicators.</li>
+                <li><strong>Data Science:</strong> Implemented PCA to reduce the dimensionality of financial indicators.</li>
                 <li><strong>Outcome:</strong> The simplest <strong>ARIMA</strong> model proved to be the best predictor for TSLA stock. Neither sentiment data nor PCA yielded statistically significant performance improvements.</li>
             </ul>
         `,
