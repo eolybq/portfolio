@@ -69,32 +69,37 @@ const projects = [
         type: ["stat", "ml"]
     },
     {
-        // project_title_4: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
+        // project_title_4: "Predikce finanční volatility: GARCH modely a API",
+        url: "https://github.com/eolybq/financial_volatility_forecaster",
+        type: ["stat"]
+    },
+    {
+        // project_title_5: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
         url: "https://github.com/eolybq/bachelors_thesis",
         type: "stat"
     },
     {
-        // project_title_5: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
+        // project_title_6: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
         url: "https://github.com/eolybq/market_sim_prediction",
         type: "stat"
     },
     {
-        // project_title_6: "Webová aplikace pro testování různých modelů s různými hyperparametry",
+        // project_title_7: "Webová aplikace pro testování různých modelů s různými hyperparametry",
         url: "https://github.com/eolybq/ModelApp",
         type: ["web", "stat", "ml"]
     },
     {
-        // project_title_7: "Webová aplikace pro správu kalorií a aktivit",
+        // project_title_8: "Webová aplikace pro správu kalorií a aktivit",
         url: "https://github.com/eolybq/FitApp",
         type: "web"
     },
     {
-        // project_title_8: "Webová stránka pro živý chat s využitím WebSocketů",
+        // project_title_9: "Webová stránka pro živý chat s využitím WebSocketů",
         url: "https://github.com/eolybq/ChatApp",
         type: "web"
     },
     {
-        // project_title_9: "Webová stránka pro portfolio",
+        // project_title_10: "Webová stránka pro portfolio",
         url: "https://github.com/eolybq/PortfolioWeb",
         type: "web"
     },

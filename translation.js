@@ -70,9 +70,20 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
         `,
-
-        project_title_4: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank",
+        project_title_4: "Predikce finanční volatility: GARCH modely a API",
         project_desc_4: `
+            Tento projekt se zaměřuje na kvantitativní modelování finančního rizika. Místo prosté směrodatné odchylky využívá statistické modely k předpovědi volatility aktiv na základě historických dat.
+            <br><br>
+            <strong>Klíčové prvky a výsledky:</strong>
+            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+                <li><strong>Modelování:</strong> Implementace modelů <strong>GARCH(p,q)</strong> pomocí knihovny <code>arch</code> s podporou pokročilých distribucí chyb (Skew-t, GED) pro zachycení "volatility clusteringu" a "fat tails".</li>
+                <li><strong>Architektura:</strong> Robustní <strong>FastAPI</strong> backend poskytující REST endpointy pro predikce volatility v reálném čase.</li>
+                <li><strong>Data Pipeline:</strong> Automatizované stahování dat (<code>yfinance</code>), transformace na log-returns a perzistence predikcí do <strong>PostgreSQL</strong> databáze pro zpětné testování.</li>
+            </ul>
+            <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
+        `,
+        project_title_5: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank",
+        project_desc_5: `
             Ekonometrická analýza v <strong>R</strong> zkoumající dopad nekonvenční monetární politiky na inflační očekávání v ČR, eurozóně a Švédsku.
             <br><br>
             <strong>Metodologie:</strong>
@@ -86,8 +97,8 @@ export const translations = {
             <a href='https://is.muni.cz/th/dzkyy/?fakulta=1421;obdobi=181;lang=cs;id=300358' target='_blank'>Odkaz na práci v IS MU</a>.
         `,
 
-        project_title_5: "Predikce cen akcií v simulované kolektivní VŠ hře",
-        project_desc_5: `
+        project_title_6: "Predikce cen akcií v simulované kolektivní VŠ hře",
+        project_desc_6: `
             Projekt v <strong>R</strong> zaměřený na analýzu trhu v rámci simulované manažerské hry (Manahra) na Masarykově univerzitě.
             <br><br>
             <strong>Cíl & Realizace:</strong>
@@ -98,8 +109,8 @@ export const translations = {
             </ul>
         `,
 
-        project_title_6: "Webová aplikace pro testování modelů (Time Series)",
-        project_desc_6: `
+        project_title_7: "Webová aplikace pro testování modelů (Time Series)",
+        project_desc_7: `
             Interaktivní webová aplikace, která umožňuje uživatelům experimentovat s hyperparametry modelů na reálných finančních datech.
             <br><br>
             <strong>Funkcionalita:</strong>
@@ -111,8 +122,8 @@ export const translations = {
             <em>Status: In-progress (plánováno rozšíření o další modely a veřejný deployment).</em>
         `,
 
-        project_title_7: "FitApp: Správa kalorií a aktivit",
-        project_desc_7: `
+        project_title_8: "FitApp: Správa kalorií a aktivit",
+        project_desc_8: `
             Full-stack webová aplikace pro sledování životního stylu, příjmu makroživin a sportovních aktivit.
             <br><br>
             <strong>Technologie:</strong>
@@ -124,8 +135,8 @@ export const translations = {
             <a href='https://fitapp-mo2k.onrender.com/' target='_blank'>Otevřít aplikaci</a>
         `,
 
-        project_title_8: "Real-time Chat s WebSockety",
-        project_desc_8: `
+        project_title_9: "Real-time Chat s WebSockety",
+        project_desc_9: `
             Chatovací aplikace umožňující komunikaci v reálném čase, včetně podpory pro emoji a GIFy.
             <br><br>
             <strong>Technické řešení:</strong>
@@ -138,8 +149,8 @@ export const translations = {
             <a href='https://chatapp-three-orpin.vercel.app/login' target='_blank'>Otevřít demo</a>
         `,
 
-        project_title_9: "Webová stránka pro portfolio",
-        project_desc_9: `
+        project_title_10: "Webová stránka pro portfolio",
+        project_desc_10: `
             Stránka, na které se právě nacházíte! :)
             <br><br>
             Nejedná se o stažený template, ale o ručně psaný kód v čistém <strong>JavaScriptu, HTML a CSS</strong>. Cílem bylo vytvořit rychlou, jednoduchou a responzivní prezentaci mých projektů s deploymentem na GitHub Pages.
@@ -216,9 +227,20 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
         `,
-
-        project_title_4: "Bachelor Thesis: Unconventional Central Bank Tools Analysis",
+        project_title_4: "Financial Volatility Forecasting: GARCH Models & API",
         project_desc_4: `
+            This project focuses on quantitative financial risk modeling. Moving beyond simple standard deviation, it utilizes statistical models to forecast asset volatility based on historical price action.
+            <br><br>
+            <strong>Key Features & Results:</strong>
+            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+                <li><strong>Modeling:</strong> Implementation of <strong>GARCH(p,q)</strong> models using the <code>arch</code> library, supporting advanced error distributions (Skew-t, GED) to capture volatility clustering and fat tails.</li>
+                <li><strong>Architecture:</strong> A robust <strong>FastAPI</strong> backend exposing REST endpoints for real-time volatility predictions.</li>
+                <li><strong>Data Pipeline:</strong> Automated data fetching (<code>yfinance</code>), log-returns transformation, and persistence of predictions into a <strong>PostgreSQL</strong> database for backtesting.</li>
+            </ul>
+            <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
+        `,
+        project_title_5: "Bachelor Thesis: Unconventional Central Bank Tools Analysis",
+        project_desc_5: `
             Econometric analysis in <strong>R</strong> examining the impact of unconventional monetary policy on inflation expectations in the Czech Republic, Eurozone, and Sweden.
             <br><br>
             <strong>Methodology:</strong>
@@ -232,8 +254,8 @@ export const translations = {
             <a href='https://is.muni.cz/th/dzkyy/?fakulta=1421;obdobi=181;lang=cs;id=300358' target='_blank'>Thesis available at IS MU</a>.
         `,
 
-        project_title_5: "Stock Price Prediction in Simulated University Game",
-        project_desc_5: `
+        project_title_6: "Stock Price Prediction in Simulated University Game",
+        project_desc_6: `
             An <strong>R</strong> project analyzing a simulated market within the "Manahra" management game at Masaryk University.
             <br><br>
             <strong>Goal & Implementation:</strong>
@@ -244,8 +266,8 @@ export const translations = {
             </ul>
         `,
 
-        project_title_6: "Web App for Model Testing (Time Series)",
-        project_desc_6: `
+        project_title_7: "Web App for Model Testing (Time Series)",
+        project_desc_7: `
             Interactive web application allowing users to experiment with model hyperparameters on real-world stock data.
             <br><br>
             <strong>Features:</strong>
@@ -270,8 +292,8 @@ export const translations = {
             <a href='https://fitapp-mo2k.onrender.com/' target='_blank'>Open App</a>
         `,
 
-        project_title_8: "Real-time Chat with WebSockets",
-        project_desc_8: `
+        project_title_9: "Real-time Chat with WebSockets",
+        project_desc_9: `
             Chat application enabling real-time communication, including support for emojis and GIFs.
             <br><br>
             <strong>Technical Solution:</strong>
@@ -284,8 +306,8 @@ export const translations = {
             <a href='https://chatapp-three-orpin.vercel.app/login' target='_blank'>Open Demo</a>
         `,
 
-        project_title_9: "Portfolio Webpage",
-        project_desc_9: `
+        project_title_10: "Portfolio Webpage",
+        project_desc_10: `
             The page you are currently viewing! :)
             <br><br>
             This is not a template, but pure <strong>JavaScript, HTML, and CSS</strong> written from scratch. The goal was to create a fast, simple, and responsive showcase of my projects deployed via GitHub Pages.
