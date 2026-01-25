@@ -107,13 +107,25 @@ const filterDiv = document.createElement('div')
 filterDiv.className = 'project-filter'
 projectsSection.appendChild(filterDiv)
 
+let currentFilterIndex = 0
+
 function renderFilterButtons() {
     const filterOptions = translations[currentLang].filters
     filterDiv.innerHTML = ''
-    filterOptions.forEach(opt => {
+    filterOptions.forEach((opt, idx) => {
         const btn = document.createElement('button')
         btn.textContent = opt
-        btn.onclick = () => renderProjects(opt)
+        if (idx === currentFilterIndex) {
+            btn.classList.add('active')
+        }
+        btn.onclick = () => {
+            currentFilterIndex = idx
+            // Update active class immediately
+            Array.from(filterDiv.children).forEach((b, i) => {
+                b.classList.toggle('active', i === idx)
+            })
+            renderProjects(opt)
+        }
         filterDiv.appendChild(btn)
     })
 }
@@ -150,7 +162,11 @@ function showModal(project, idx) {
 
 
 
-function renderProjects(filter = translations[currentLang].filters[0]) {
+function renderProjects(filter = null) {
+    if (!filter) {
+        filter = translations[currentLang].filters[currentFilterIndex]
+    }
+    
     projectsSection.querySelectorAll('.project').forEach(e => e.remove())
 
     projects.forEach((proj, idx) => {

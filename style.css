@@ -236,12 +236,15 @@ nav {
     border-radius: 16px;
     margin-bottom: 36px;
     box-shadow: 0 4px 16px rgb(10 34 57 / 0.08);
-    padding: 14px 0;
+    padding: 14px 20px;
     position: sticky;
     top: 0;
     z-index: 10;
     opacity: 0;
     animation: fadeInNav 0.8s 0.1s forwards;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @keyframes fadeInNav {
@@ -257,6 +260,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex: 1;
 }
 
 nav a {
@@ -293,6 +297,12 @@ nav a:focus {
 nav a:hover::after,
 nav a:focus::after {
     width: 100%;
+}
+
+.nav-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 .skills-list {
@@ -497,32 +507,30 @@ nav a:focus::after {
 
 
 #theme-toggle {
-    position: fixed;
-    top: 16px;
-    right: 20px;
-    background: #0a2239;
+    background: transparent;
     color: #fff;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
     transition: transform 0.2s, background 0.2s;
-    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #theme-toggle:hover {
     transform: scale(1.1);
-    background: #0a0a0a;
+    background: rgba(255, 255, 255, 0.1);
 }
 body.dark-mode #theme-toggle {
-    background: #1769aa;
+    background: transparent;
 }
 body.dark-mode #theme-toggle:hover {
     transform: scale(1.1);
-    background: #0a0a0a;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Dark mode */
@@ -657,29 +665,27 @@ body.dark-mode .modal .close:hover {
 
 /* EN tlacitko */
 #lang-toggle {
-    position: fixed;
-    top: 16px;
-    right: 70px;
-    background: #0a2239;
+    background: transparent;
     color: #fff;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
     transition: transform 0.2s, background 0.2s;
-    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #lang-toggle:hover {
     transform: scale(1.1);
-    background: #0a0a0a;
+    background: rgba(255, 255, 255, 0.1);
 }
 body.dark-mode #lang-toggle {
-    background: #1769aa;
+    background: transparent;
 }
 body.dark-mode #lang-toggle:hover {
-    background: #0a0a0a;
+    background: rgba(255, 255, 255, 0.1);
 }
