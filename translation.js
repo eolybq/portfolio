@@ -70,7 +70,7 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
         `,
-        project_title_4: "Predikce finanční volatility: GARCH modely a API",
+        project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         project_desc_4: `
             Tento projekt se zaměřuje na kvantitativní modelování finančního rizika. Místo prosté směrodatné odchylky využívá statistické modely k předpovědi volatility aktiv na základě historických dat.
             <br><br>
@@ -227,7 +227,7 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
         `,
-        project_title_4: "Financial Volatility Forecasting: GARCH Models & API",
+        project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         project_desc_4: `
             This project focuses on quantitative financial risk modeling. Moving beyond simple standard deviation, it utilizes statistical models to forecast asset volatility based on historical price action.
             <br><br>
