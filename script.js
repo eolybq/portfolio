@@ -59,8 +59,8 @@ const projects = [
         type: ["ml"]
     },
     {
-        // project_title_2: "RAG LLM ChatBOT pro dokumentaci python knihoven",
-        url: "https://github.com/eolybq/docs_rag_chat_bot",
+        // project_title_2: "PyDocs AI: expert na Python knihovny",
+        url: "https://github.com/eolybq/pydocs_ai",
         type: ["ml"]
     },
     {

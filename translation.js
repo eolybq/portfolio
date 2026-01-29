@@ -44,7 +44,7 @@ export const translations = {
             </ul>
         `,
 
-        project_title_2: "RAG LLM ChatBOT pro dokumentaci python knihoven",
+        project_title_2: "PyDocs AI: expert na Python knihovny",
         project_desc_2: `
             End-to-end implementace <strong>RAG (Retrieval-Augmented Generation)</strong> pipeline v Pythonu, která umožňuje chatovat s technickou dokumentací knihoven (Pandas, Numpy, Sklearn).
             <br><br>
@@ -201,7 +201,7 @@ export const translations = {
             </ul>
         `,
 
-        project_title_2: "RAG LLM ChatBOT for Python Documentation",
+        project_title_2: "PyDocs AI: Python libraries expert",
         project_desc_2: `
             End-to-end implementation of a <strong>RAG (Retrieval-Augmented Generation)</strong> pipeline in Python, enabling users to chat with technical documentation (Pandas, Numpy, Sklearn).
             <br><br>
