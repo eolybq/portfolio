@@ -78,9 +78,12 @@ export const translations = {
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
                 <li><strong>Modelování:</strong> Implementace modelů <strong>GARCH(p,q)</strong> pomocí knihovny <code>arch</code> s podporou pokročilých distribucí chyb (Skew-t, GED) pro zachycení "volatility clusteringu" a "fat tails".</li>
                 <li><strong>Architektura:</strong> Robustní <strong>FastAPI</strong> backend poskytující REST endpointy pro predikce volatility v reálném čase.</li>
-                <li><strong>Data Pipeline:</strong> Automatizované stahování dat (<code>yfinance</code>), transformace na log-returns a perzistence predikcí do <strong>PostgreSQL</strong> databáze pro zpětné testování.</li>
+                <li><strong>Data Pipeline:</strong> Automatizované stahování dat pomocí vlastní fetch data API: <a href='https://github.com/eolybq/financial_data_fetcher' target='_blank'>Financial Data Fetcher</a>, transformace na log-returns a perzistence predikcí do <strong>PostgreSQL</strong> databáze pro zpětné testování.</li>
+                <li><strong>Evaluation:</strong>Každý den provede za pomocí <strong>GitHub Actions</strong> predikci pro akcie Nasdaq-100, provede evaluaci predikcí oproti skutečné realized volatilitě, uloží performance do databáze pro evaluaci</li>
+                <li><strong>Reporting:</strong>Vezme model performance z databáze a vypíše metriky ako MAE, MAPE, RMSE či Bias a ukaže grafy pro průměrné predikce pro Nasdaq-100 za poslední týden.</li>
             </ul>
             <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
+            <a href='https://huggingface.co/spaces/yezdata/financial-volatility-forecaster/docs' target='_blank'>Odkaz na API Docs</a>.
         `,
         project_title_5: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank",
         project_desc_5: `
@@ -229,15 +232,18 @@ export const translations = {
         `,
         project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         project_desc_4: `
-            This project focuses on quantitative financial risk modeling. Moving beyond simple standard deviation, it utilizes statistical models to forecast asset volatility based on historical price action.
+            This project focuses on quantitative modeling of financial risk. Instead of simple standard deviation, it utilizes statistical models to forecast asset volatility based on historical data.
             <br><br>
-            <strong>Key Features & Results:</strong>
+            <strong>Key Features and Results:</strong>
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
-                <li><strong>Modeling:</strong> Implementation of <strong>GARCH(p,q)</strong> models using the <code>arch</code> library, supporting advanced error distributions (Skew-t, GED) to capture volatility clustering and fat tails.</li>
-                <li><strong>Architecture:</strong> A robust <strong>FastAPI</strong> backend exposing REST endpoints for real-time volatility predictions.</li>
-                <li><strong>Data Pipeline:</strong> Automated data fetching (<code>yfinance</code>), log-returns transformation, and persistence of predictions into a <strong>PostgreSQL</strong> database for backtesting.</li>
+                <li><strong>Modeling:</strong> Implementation of <strong>GARCH(p,q)</strong> models using the <code>arch</code> library with support for advanced error distributions (Skew-t, GED) to capture "volatility clustering" and "fat tails".</li>
+                <li><strong>Architecture:</strong> Robust <strong>FastAPI</strong> backend providing REST endpoints for real-time volatility predictions.</li>
+                <li><strong>Data Pipeline:</strong> Automated data retrieval using a custom fetch data API: <a href='https://github.com/eolybq/financial_data_fetcher' target='_blank'>Financial Data Fetcher</a>, transformation into log-returns and persistence of predictions into a <strong>PostgreSQL</strong> database for backtesting.</li>
+                <li><strong>Evaluation:</strong> Executes daily predictions for Nasdaq-100 stocks via <strong>GitHub Actions</strong>, performs evaluation of predictions against actual realized volatility, and stores performance in the database for evaluation.</li>
+                <li><strong>Reporting:</strong> Retrieves model performance from the database and outputs metrics such as MAE, MAPE, RMSE, or Bias, and displays graphs for average Nasdaq-100 predictions over the last week.</li>
             </ul>
             <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
+            <a href='https://huggingface.co/spaces/yezdata/financial-volatility-forecaster/docs' target='_blank'>Link to API Docs</a>.
         `,
         project_title_5: "Bachelor Thesis: Unconventional Central Bank Tools Analysis",
         project_desc_5: `
