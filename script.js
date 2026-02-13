@@ -64,19 +64,19 @@ const projects = [
         type: ["mle", "ml"]
     },
     {
-        // project_title_3: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
-        url: "https://github.com/eolybq/bayes_vs_ml",
-        type: ["stat", "ml"]
-    },
-    {
-        // project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
+        // project_title_3: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         url: "https://github.com/eolybq/financial_volatility_forecaster",
         type: ["mle", "stat"]
     },
     {
-        // project_title_5: "FinFetcher: Market-aware Financial Data Library",
+        // project_title_4: "FinFetcher: Market-aware Financial Data Library",
         url: "https://github.com/eolybq/finfetcher",
         type: ["mle"]
+    },
+    {
+        // project_title_5: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
+        url: "https://github.com/eolybq/bayes_vs_ml",
+        type: ["stat", "ml"]
     },
     {
         // project_title_6: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",

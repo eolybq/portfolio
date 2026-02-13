@@ -59,21 +59,9 @@ export const translations = {
             <a href='https://yezdata-pydocs-ai.hf.space' target='_blank'>Otevřít aplikaci</a> | <a href='https://yezdata-pydocs-ai-api.hf.space/docs' target='_blank'>API Dokumentace</a>
         `,
 
-        project_title_3: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
-        project_desc_3: `
-            Tento projekt řeší dilema „Black Box vs. Glass Box“ v oblasti NLP porovnáním predikční síly moderních jazykových modelů (LLM) s interpretovatelností pravděpodobnostních modelů.
-            <br><br>
-            <strong>Klíčové prvky a výsledky:</strong>
-            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
-                <li><strong>Modelování:</strong> Implementace a porovnání tří přístupů: Fine-tuned <strong>FinBERT</strong> (Hugging Face), <strong>Bayesovská logistická regrese</strong> (vlastní model v PyMC s MCMC/NUTS samplerem) a <strong>Complement Naive Bayes</strong>.</li>
-                <li><strong>Feature Engineering:</strong> Vlastní tokenizační pipeline pro zachování sémantiky čísel (např. konverze „+5%“ na <code>POS_PERC_TOKEN</code>).</li>
-                <li><strong>Výsledky:</strong> FinBERT dominoval v přesnosti (<strong>77 % Accuracy, 0.92 ROC AUC</strong>). Bayesovský model (63 % Accuracy) však poskytl klíčovou byznysovou hodnotu skrze kvantifikaci nejistoty a interpretovatelnost vah (Forest Plots).</li>
-            </ul>
-            <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
-        `,
 
-        project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
-        project_desc_4: `
+        project_title_3: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
+        project_desc_3: `
             Tento projekt se zaměřuje na kvantitativní modelování finančního rizika. Místo prosté směrodatné odchylky využívá statistické modely k předpovědi volatility aktiv na základě historických dat.
             <br><br>
             <strong>Klíčové prvky a výsledky:</strong>
@@ -88,8 +76,8 @@ export const translations = {
             <a href='https://yezdata-financial-volatility-forecaster.hf.space/docs' target='_blank'>API Docs</a> | <a href='https://yezdata-financial-volatility-forecaster-report.hf.space' target='_blank'>Performance Report</a>
         `,
 
-        project_title_5: "FinFetcher: Market-aware Financial Data Library",
-        project_desc_5: `
+        project_title_4: "FinFetcher: Market-aware Financial Data Library",
+        project_desc_4: `
             Robustní Python knihovna pro stahování čistých historických finančních dat. Řeší problém neúplných denních svíček při stahování během obchodních hodin.
             <br><br>
             <strong>Klíčové vlastnosti:</strong>
@@ -103,6 +91,18 @@ export const translations = {
             <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://eolybq.github.io/finfetcher/docs/' target='_blank'>Dokumentace</a>
         `,
 
+        project_title_5: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
+        project_desc_5: `
+            Tento projekt řeší dilema „Black Box vs. Glass Box“ v oblasti NLP porovnáním predikční síly moderních jazykových modelů (LLM) s interpretovatelností pravděpodobnostních modelů.
+            <br><br>
+            <strong>Klíčové prvky a výsledky:</strong>
+            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+                <li><strong>Modelování:</strong> Implementace a porovnání tří přístupů: Fine-tuned <strong>FinBERT</strong> (Hugging Face), <strong>Bayesovská logistická regrese</strong> (vlastní model v PyMC s MCMC/NUTS samplerem) a <strong>Complement Naive Bayes</strong>.</li>
+                <li><strong>Feature Engineering:</strong> Vlastní tokenizační pipeline pro zachování sémantiky čísel (např. konverze „+5%“ na <code>POS_PERC_TOKEN</code>).</li>
+                <li><strong>Výsledky:</strong> FinBERT dominoval v přesnosti (<strong>77 % Accuracy, 0.92 ROC AUC</strong>). Bayesovský model (63 % Accuracy) však poskytl klíčovou byznysovou hodnotu skrze kvantifikaci nejistoty a interpretovatelnost vah (Forest Plots).</li>
+            </ul>
+            <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
+        `,
         project_title_6: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank",
         project_desc_6: `
             Ekonometrická analýza v <strong>R</strong> zkoumající dopad nekonvenční monetární politiky na inflační očekávání v ČR, eurozóně a Švédsku.
@@ -240,20 +240,8 @@ export const translations = {
             <a href='https://yezdata-pydocs-ai.hf.space' target='_blank'>Open App</a> | <a href='https://yezdata-pydocs-ai-api.hf.space/docs' target='_blank'>API Documentation</a>
         `,
 
-        project_title_3: "Financial Sentiment Analysis: Bayesian Statistics vs. Transformers (FinBERT)",
+        project_title_3: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         project_desc_3: `
-            This project addresses the "Black Box vs. Glass Box" dilemma in financial NLP by benchmarking the predictive power of Large Language Models against the interpretability of probabilistic models.
-            <br><br>
-            <strong>Key Highlights & Results:</strong>
-            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
-                <li><strong>Modeling:</strong> Implemented and compared three distinct approaches: A fine-tuned <strong>FinBERT</strong> model (Hugging Face), <strong>Bayesian Logistic Regression</strong> (built from scratch in PyMC using MCMC/NUTS sampling), and <strong>Complement Naive Bayes</strong>.</li>
-                <li><strong>Feature Engineering:</strong> Developed a custom tokenization pipeline to preserve the semantic value of numerical data (e.g., converting "+5%" to <code>POS_PERC_TOKEN</code>).</li>
-                <li><strong>Outcome:</strong> FinBERT achieved state-of-the-art performance (<strong>77% Accuracy, 0.92 ROC AUC</strong>). However, the Bayesian model (63% Accuracy) delivered critical business value through uncertainty quantification and interpretability (Forest Plots).</li>
-            </ul>
-            <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
-        `,
-        project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
-        project_desc_4: `
             This project focuses on quantitative modeling of financial risk. Instead of simple standard deviation, it utilizes statistical models to forecast asset volatility based on historical data.
             <br><br>
             <strong>Key Features and Results:</strong>
@@ -267,8 +255,8 @@ export const translations = {
             <br>
             <a href='https://yezdata-financial-volatility-forecaster.hf.space/docs' target='_blank'>API Docs</a> | <a href='https://yezdata-financial-volatility-forecaster-report.hf.space' target='_blank'>Performance Report</a>
         `,
-        project_title_5: "FinFetcher: Market-aware Financial Data Library",
-        project_desc_5: `
+        project_title_4: "FinFetcher: Market-aware Financial Data Library",
+        project_desc_4: `
             A robust Python library for fetching clean historical financial data. It addresses the problem of "unfinished" daily candles when fetching data during active market hours.
             <br><br>
             <strong>Key Capabilities:</strong>
@@ -281,6 +269,20 @@ export const translations = {
             <br>
             <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://eolybq.github.io/finfetcher/docs/' target='_blank'>Documentation</a>
         `,
+
+        project_title_5: "Financial Sentiment Analysis: Bayesian Statistics vs. Transformers (FinBERT)",
+        project_desc_5: `
+            This project addresses the "Black Box vs. Glass Box" dilemma in financial NLP by benchmarking the predictive power of Large Language Models against the interpretability of probabilistic models.
+            <br><br>
+            <strong>Key Highlights & Results:</strong>
+            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+                <li><strong>Modeling:</strong> Implemented and compared three distinct approaches: A fine-tuned <strong>FinBERT</strong> model (Hugging Face), <strong>Bayesian Logistic Regression</strong> (built from scratch in PyMC using MCMC/NUTS sampling), and <strong>Complement Naive Bayes</strong>.</li>
+                <li><strong>Feature Engineering:</strong> Developed a custom tokenization pipeline to preserve the semantic value of numerical data (e.g., converting "+5%" to <code>POS_PERC_TOKEN</code>).</li>
+                <li><strong>Outcome:</strong> FinBERT achieved state-of-the-art performance (<strong>77% Accuracy, 0.92 ROC AUC</strong>). However, the Bayesian model (63% Accuracy) delivered critical business value through uncertainty quantification and interpretability (Forest Plots).</li>
+            </ul>
+            <strong>Tech Stack:</strong> Python, PyTorch, PyMC, Hugging Face, Scikit-learn, ArviZ.
+        `,
+
         project_title_6: "Bachelor Thesis: Unconventional Central Bank Tools Analysis",
         project_desc_6: `
             Econometric analysis in <strong>R</strong> examining the impact of unconventional monetary policy on inflation expectations in the Czech Republic, Eurozone, and Sweden.
