@@ -61,7 +61,7 @@ const projects = [
     {
         // project_title_2: "PyDocs AI: expert na Python knihovny",
         url: "https://github.com/eolybq/pydocs_ai",
-        type: ["ml"]
+        type: ["mle", "ml"]
     },
     {
         // project_title_3: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
@@ -69,24 +69,24 @@ const projects = [
         type: ["stat", "ml"]
     },
     {
-        // project_title_4: "Predikce finanční volatility: GARCH modely a API",
+        // project_title_4: "Financial Volatility Forecaster: End-to-End Quantitative Pipeline",
         url: "https://github.com/eolybq/financial_volatility_forecaster",
-        type: ["stat"]
+        type: ["mle", "stat"]
     },
     {
-        // project_title_5: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
+        // project_title_5: "FinFetcher: Market-aware Financial Data Library",
+        url: "https://github.com/eolybq/finfetcher",
+        type: ["mle"]
+    },
+    {
+        // project_title_6: "Bakalářská práce: Analýza vlivu nekonvenčních nástrojů centrálních bank na inflační očekávání",
         url: "https://github.com/eolybq/bachelors_thesis",
         type: "stat"
     },
     {
-        // project_title_6: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
+        // project_title_7: "Predikce cen akcií podniků v simulované kolektivní VŠ hře",
         url: "https://github.com/eolybq/market_sim_prediction",
-        type: "stat"
-    },
-    {
-        // project_title_7: "Webová aplikace pro testování různých modelů s různými hyperparametry",
-        url: "https://github.com/eolybq/ModelApp",
-        type: ["web", "stat", "ml"]
+        type: ["mle", "stat"]
     },
     {
         // project_title_8: "Webová aplikace pro správu kalorií a aktivit",
@@ -94,16 +94,23 @@ const projects = [
         type: "web"
     },
     {
-        // project_title_9: "Webová stránka pro živý chat s využitím WebSocketů",
-        url: "https://github.com/eolybq/ChatApp",
-        type: "web"
-    },
-    {
-        // project_title_10: "Webová stránka pro portfolio",
+        // project_title_9: "Webová stránka pro portfolio",
         url: "https://github.com/eolybq/PortfolioWeb",
         type: "web"
     },
 ]
+    
+
+// {                                                                                                                                                                                                                                                                           │
+//     // project_title_7: "Webová aplikace pro testování různých modelů s různými hyperparametry",                                                                                                                                                                            │
+//     url: "https://github.com/eolybq/ModelApp",                                                                                                                                                                                                                              │
+//     type: ["web", "stat", "ml"]                                                                                                                                                                                                                                             │
+// },
+// {                                                                                                                                                                                                                                                                           │
+//     // project_title_9: "Webová stránka pro živý chat s využitím WebSocketů",                                                                                                                                                                                               │
+//     url: "https://github.com/eolybq/ChatApp",                                                                                                                                                                                                                               │
+//     type: "web"                                                                                                                                                                                                                                                             │
+// },
 
 
 const projectsSection = document.getElementById('projects')
@@ -179,8 +186,8 @@ function renderProjects(filter = null) {
 
         // map filter labels na typy
         const filterMap = {
-            CS: { "Vše": null, "Webový vývoj": "web", "Statistika": "stat", "Strojové učení": "ml" },
-            EN: { "All": null, "Web Development": "web", "Statistics": "stat", "Machine Learning": "ml" }
+            CS: { "Vše": null, "ML Engineering": "mle", "Webový vývoj": "web", "Data Science & Statistika": "stat", "Strojové učení": "ml" },
+            EN: { "All": null, "ML Engineering": "mle", "Web Development": "web", "Data Science & Statistics": "stat", "Machine Learning": "ml" }
         }
         const selectedType = filterMap[currentLang][filter]
 
