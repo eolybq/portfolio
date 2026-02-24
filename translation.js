@@ -68,7 +68,7 @@ export const translations = {
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
                 <li><strong>Modelování:</strong> Implementace modelů <strong>GARCH(p,q)</strong> pomocí knihovny <code>arch</code> s podporou pokročilých distribucí chyb (Skew-t, GED) pro zachycení "volatility clusteringu" a "fat tails".</li>
                 <li><strong>Architektura:</strong> Robustní <strong>FastAPI</strong> backend poskytující REST endpointy pro predikce volatility v reálném čase.</li>
-                <li><strong>Data Pipeline:</strong> Automatizované stahování dat pomocí vlastní PyPI knihovny <a href='https://github.com/eolybq/finfetcher' target='_blank'>FinFetcher</a>, transformace na log-returns a perzistence predikcí do <strong>PostgreSQL</strong> databáze.</li>
+                <li><strong>Data Pipeline:</strong> Automatizované stahování dat pomocí vlastní PyPI knihovny <a href='https://github.com/yezdata/finfetcher' target='_blank'>FinFetcher</a>, transformace na log-returns a perzistence predikcí do <strong>PostgreSQL</strong> databáze.</li>
                 <li><strong>Evaluation & Reporting:</strong> Každý den provádí automatické predikce pro Nasdaq-100 a evaluaci oproti skutečnosti. Výsledky jsou zobrazeny v interaktivním dashboardu.</li>
             </ul>
             <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
@@ -88,7 +88,7 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, Pandas, yfinance, pytz.
             <br>
-            <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://eolybq.github.io/finfetcher/docs/' target='_blank'>Dokumentace</a>
+            <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://yezdata.github.io/finfetcher/docs/' target='_blank'>Dokumentace</a>
         `,
 
         project_title_5: "Analýza finančního sentimentu: Bayesovská statistika vs. Transformers (FinBERT)",
@@ -248,7 +248,7 @@ export const translations = {
             <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
                 <li><strong>Modeling:</strong> Implementation of <strong>GARCH(p,q)</strong> models using the <code>arch</code> library with support for advanced error distributions (Skew-t, GED) to capture "volatility clustering" and "fat tails".</li>
                 <li><strong>Architecture:</strong> Robust <strong>FastAPI</strong> backend providing REST endpoints for real-time volatility predictions.</li>
-                <li><strong>Data Pipeline:</strong> Automated data retrieval using the <a href='https://github.com/eolybq/finfetcher' target='_blank'>FinFetcher</a> library, transformation into log-returns and persistence of predictions into a <strong>PostgreSQL</strong> database.</li>
+                <li><strong>Data Pipeline:</strong> Automated data retrieval using the <a href='https://github.com/yezdata/finfetcher' target='_blank'>FinFetcher</a> library, transformation into log-returns and persistence of predictions into a <strong>PostgreSQL</strong> database.</li>
                 <li><strong>Evaluation & Reporting:</strong> Executes daily predictions for Nasdaq-100 stocks and performs automated evaluation. Performance metrics are visualized in an interactive dashboard.</li>
             </ul>
             <strong>Tech Stack:</strong> Python, FastAPI, Arch-py, PostgreSQL, Docker, Hugging Face Spaces.
@@ -267,7 +267,7 @@ export const translations = {
             </ul>
             <strong>Tech Stack:</strong> Python, Pandas, yfinance, pytz.
             <br>
-            <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://eolybq.github.io/finfetcher/docs/' target='_blank'>Documentation</a>
+            <a href='https://pypi.org/project/finfetcher/' target='_blank'>PyPI Package</a> | <a href='https://yezdata.github.io/finfetcher/docs/' target='_blank'>Documentation</a>
         `,
 
         project_title_5: "Financial Sentiment Analysis: Bayesian Statistics vs. Transformers (FinBERT)",
